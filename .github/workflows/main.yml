@@ -19,7 +19,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - run: npm run build --if-present
-      - run: npm test
       - name: Deploy Function
         id: sls-func
         uses: yc-actions/yc-sls-function@v1.0.1
