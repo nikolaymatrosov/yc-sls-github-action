@@ -34,6 +34,6 @@ jobs:
           environment: |
             DEBUG=True
             FOO=bar
-          source: |
+          include: |
             ./dist
             package.json
