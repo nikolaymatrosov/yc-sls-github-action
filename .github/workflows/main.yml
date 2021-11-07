@@ -22,7 +22,7 @@ jobs:
       - run: npm test
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@v1
+        uses: yc-actions/yc-sls-function@v1.0.1
         with:
           yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
           folder-id: 'b1gbmkj63hnlfu8877sn'
