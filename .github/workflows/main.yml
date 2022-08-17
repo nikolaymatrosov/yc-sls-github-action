@@ -23,7 +23,7 @@ jobs:
       - run: npm run build --if-present
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@v1.0.1
+        uses: yc-actions/yc-sls-function@v2
         with:
           yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
           folder-id: 'b1gbmkj63hnlfu8877sn'
