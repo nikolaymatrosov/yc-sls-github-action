@@ -31,6 +31,7 @@ jobs:
           runtime: 'nodejs16'
           memory: '256Mb'
           entrypoint: 'dist/index.handler'
+          service-account: aje69kpbchc82mg1g1m5
           environment: |
             DEBUG=True
             FOO=bar
