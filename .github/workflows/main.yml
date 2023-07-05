@@ -29,12 +29,13 @@ jobs:
           folder-id: 'b1gbmkj63hnlfu8877sn'
           function-name: 'github-deploy'
           runtime: 'nodejs16'
-          memory: '256Mb'
+          memory: 256Mb
           entrypoint: 'dist/index.handler'
           service-account: aje69kpbchc82mg1g1m5
           environment: |
             DEBUG=True
             FOO=bar
+          source-root: './functions'
           include: |
             ./dist
             package.json
