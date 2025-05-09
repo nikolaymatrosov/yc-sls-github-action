@@ -23,15 +23,15 @@ jobs:
       - run: npm run build --if-present
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@v2.10.0
+        uses: yc-actions/yc-sls-function@000bf469f76b9c9115ad6e9f61e015eda9220b86
         with:
           yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
           folder-id: 'b1gbmkj63hnlfu8877sn'
           function-name: 'github-deploy'
-          runtime: 'nodejs16'
+          runtime: 'nodejs18'
           memory: 256Mb
           entrypoint: 'dist/index.handler'
-          service-account: aje69kpbchc82mg1g1m5
+          service-account-name: sls
           environment: |
             DEBUG=True
             FOO=bar
@@ -39,3 +39,4 @@ jobs:
           include: |
             ./dist
             package.json
+          async: true
