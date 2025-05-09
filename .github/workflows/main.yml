@@ -25,7 +25,7 @@ jobs:
         id: sls-func
         uses: yc-actions/yc-sls-function@000bf469f76b9c9115ad6e9f61e015eda9220b86
         with:
-          yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
+          yc-sa-id: ajep6pdp79imlp76gidn
           folder-id: 'b1gbmkj63hnlfu8877sn'
           function-name: 'github-deploy'
           runtime: 'nodejs18'
