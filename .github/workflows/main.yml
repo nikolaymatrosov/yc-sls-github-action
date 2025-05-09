@@ -1,5 +1,8 @@
 name: Node.js CI
 
+permissions:
+  id-token: write  # Нужно для получения JWT токена
+
 on:
   push:
     branches: [ main ]
