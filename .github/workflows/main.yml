@@ -46,4 +46,4 @@ jobs:
           secrets: |
             DEMO=e6q3f106arig29ro2lq7/latest/foo
           mounts: |
-            foo:cors-test:testdata:rw
+            foo:cors-test:testdata:ro
