@@ -26,7 +26,7 @@ jobs:
       - run: npm run build --if-present
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@ec4e9d8d08191be3d359d559fc7e8a2cc31e7a9f
+        uses: yc-actions/yc-sls-function@d0576b932726fde4c67fb655343def04d620be96
         with:
           yc-sa-id: ajep6pdp79imlp76gidn
           folder-id: 'b1gbmkj63hnlfu8877sn'
@@ -46,4 +46,4 @@ jobs:
           secrets: |
             DEMO=e6q3f106arig29ro2lq7/latest/foo
           mounts: |
-            cors-test:foo:testdata:ro
+            foo:cors-test/testdata:ro
