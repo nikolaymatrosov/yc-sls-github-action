@@ -45,5 +45,6 @@ jobs:
           async: true
           secrets: |
             DEMO=e6q3f106arig29ro2lq7/latest/foo
+            ENC=e6qdiq47b8po48no63aj/latest/foo
           mounts: |
             foo:cors-test/testdata:ro
