@@ -26,7 +26,7 @@ jobs:
       - run: npm run build --if-present
       - name: Deploy Function
         id: sls-func
-        uses: yc-actions/yc-sls-function@d0576b932726fde4c67fb655343def04d620be96
+        uses: yc-actions/yc-sls-function@5314509c32b524eee1454df746107260d7585474
         with:
           yc-sa-id: ajep6pdp79imlp76gidn
           folder-id: 'b1gbmkj63hnlfu8877sn'
